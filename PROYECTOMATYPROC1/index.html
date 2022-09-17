@@ -1,45 +1,68 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
         <title>Helka Wine Lounge</title>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="container">
-            <div class="navbar">
-                <img src="./images/photo6.jpg" class="logo" width="160px">
-                  <nav> 
-                        <ul>
-                            <li><a href="">Menu</a></li>  
-                            <li><a href="">Reservas</a></li>     
-                            <li><a href="">Eventos</a></li> 
-                            <li><a href="">Fotos</a></li> 
-                         </ul>
-                  </nav> 
-           </div>
-       </div>
-        <article>
-            <div>
-               <img src="./images/photo5.jpg" style="width:1000px;">
-             </div> 
-            <div>
-               <img src="./images/photo7.png" style="width:50px;">
-               <img src="./images/photo8.png" style="width:50px;">
-            </div>
-             <div>
-               <img src="./images/photo1.jpg" style="width:300px;">
-               <img src="./images/photo3.jpg" width="300px;" height="300px;">
-               <img src="./images/photo2.jpg" style="width:300px;">
-            </div></article>
-        </article>
-        <div>
-            <footer>
-              <p>Cap. Gral. Ramon Freire 1117, Buenos Aires, Argentina</p>
-              <div>
-                  <img src="./images/photo9.png" width="20px;">
-                  <p>@helkawinelounge</p>
-             </div>
-           </footer>
+            <i class="fas fa-bars fa-2x"></i>
         </div>
-    </body>    
-    
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="./images/photo6.jpg" alt="logo">
+            </a>
+            <ul>
+                <li><a href="menu.html" class="centrado">Menu</a></li>  
+                <li><a href="reservas.html">Reservas</a></li>     
+                <li><a href="eventos.html">Eventos</a></li> 
+                <li><a href="">Fotos<span class="arrow-down"></span></a>
+                    <ul class="dropdown">
+                        <li><a href="">Lugar</a></li>
+                        <li><a href="">Comida</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>     
+   </body> 
+   <br>
+   <br>
+   <div>
+        <img src="./images/photo5.jpg" style="width:1200px;" class="center">
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <div class="small-containers">
+      <div class="cubiertos">
+        <img src="./images/photo7.png" style="width:50px;">
+      </div>
+      <div class="dardos">
+        <img src="./images/photo8.png" style="width:50px;">
+      </div>    
+   </div>
+   <div class="boxes-containers">
+        <div class="foto1">
+             <img src="./images/photo1.jpg" style="width:300px;">
+        </div>
+        <div class="foto2">
+            <img src="./images/photo3.jpg" style="width:300px;" height="300px;">
+        </div>
+        <div class="foto3">
+             <img src="./images/photo2.jpg" style="width:300px;">
+        </div>
+    </div>    
+    <div class="footer">
+        <div class="footer-items">
+            <br>
+            <br>
+            <br>
+            <h6>CAP. GRAL. RAMON FREIRE 1117, BUENOS AIRES, ARGENTINA</h6>
+            <a href=# target="_blank"><i class="fab fa-instagram"></i></a> <h6>@HELKAWINELOUNGE</h6> 
+            <br>
+            <br>
+        </div>
+    </div>
 </html>
