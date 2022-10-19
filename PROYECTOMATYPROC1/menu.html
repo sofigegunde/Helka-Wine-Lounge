@@ -2,176 +2,150 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="index.css"/>
+        <script src="script.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0"></meta>
         <title>Helka Wine Lounge</title>
     </head>
     <body>
+        <div class="container">
+            <i class="fas fa-bars fa-2x"></i>
+        </div>
         <nav class="navbar">
             <a href="index.html">
-                <img src="./images/photo6.jpg" alt="logo">
+                <img src="./images/image50.PNG" style="top: -30px;"> 
             </a>
-            <ul>
-                <li><a href="menu.html">Menu</a></li>  
-                <li><a href="reservas.html">Reservas</a></li>     
-                <li><a href="eventos.html">Eventos</a></li> 
-                <li><a href="">Fotos<span class="arrow-down"></span></a>
-                    <ul class="dropdown">
-                        <li><a href="">Lugar</a></li>
-                        <li><a href="">Comida</a></li>
-                    </ul>
-                </li>
-            </ul>   
-        </nav>     
-   </body> 
-   <br>   
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+               <ul>
+                    <li><a href="menu.html" class="centrado">Menu</a></li>  
+                    <li><a href="reservas.html">Reservas</a></li>     
+                    <li><a href="eventos.html">Eventos</a></li> 
+                    <li><a href="">Fotos<span class="arrow-down"></span></a>
+                        <ul class="dropdown">
+                            <li><a href="lugar.html">Lugar</a></li>
+                            <li><a href="comida.html">Comida</a></li>
+                       </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+        <a href="javascript:void(0);" class="icono" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+		<i class="fa fa-bars" aria-hidden="true"></i>   
+   </body>  
    <div class="menutitle">
      <h3>MENU</h3>
    </div>
    <br>
-   <div class="contenedor">
-      <div class="appetizers">
-          <div class="titulos">
-             <h3>PARA MARIDAR</h3>
-          </div>
-          <br>
-          <p.a class="plato">Tabla de Maridaje</p.a>
-          <p.b class="precios" style="float: right;">$1290</p.b>
-          <p class="platos">Tabla de variedad de 4 quesos con focaccia casera, hummus y cebollas al malbec</p>
-       </div>
-   </div>
-   <br>
-   <div class="contenedor">
-    <div class="appetizers">
-        <div class="titulos">
-           <h3>APPETIZERS</h3>
-        </div>
-        <br>
-        <p.a class="plato">Provolone Bites</p.a>
-        <p.b class="precios" style="float: right;">$650</p.b>
-        <p class="platos">Triangulos de queso provolone rebozados en panko y acompanados de mermelada de tomates y dressing de cilantro</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="appetizers">
-        <br>
-        <p.a class="plato">Papas Helka</p.a>
-        <p.b class="precios" style="float: right;">$650</p.b>
-        <p class="platos">Papas cuna con alioli y salsa brava</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="appetizers">
-        <br>
-        <p.a class="plato">Bunuelos Milose</p.a>
-        <p.b class="precios" style="float: right;">$750</p.b>
-        <p class="platos">De espinaca, remolacha, y zanahoria con dip de alioli</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="appetizers">
-        <br>
-        <p.a class="plato">Falafel Rabat</p.a>
-        <p.b class="precios" style="float: right;">$750</p.b>
-        <p class="platos">Croquetas de garbanzos con dip de zanahorias asadas</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="appetizers">
-        <br>
-        <p.a class="plato">Chicken Fingers</p.a>
-        <p.b class="precios" style="float: right;">$790</p.b>
-        <p class="platos">Bastones de pollo crispy con barbacoa y honey mustard</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="appetizers">
-        <br>
-        <p.a class="plato">Arancini de Hongos</p.a>
-        <p.b class="precios" style="float: right;">$850</p.b>
-        <p class="platos">Croquetas rellenas de risotto de hongos con corazon de queso azul</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="appetizers">
-        <br>
-        <p.a class="plato">Provoleta especial</p.a>
-        <p.b class="precios" style="float: right;">$850</p.b>
-        <p class="platos">Queso provolone grillado y acompanado con tomates confitados, portobellos salteados, pan de nuez y mix de verdes con dressing de la casa</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="appetizers">
-        <br>
-        <p.a class="plato">Tortilla de Papa Belica</p.a>
-        <p.b class="precios" style="float: right;">$900</p.b>
-        <p class="platos">Tortilla de papa y cebolla con dip de berenjenas asadas</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="appetizers">
-        <br>
-        <p.a class="plato">Burrata Montecasino</p.a>
-        <p.b class="precios" style="float: right;">$990</p.b>
-        <p class="platos">Queso fresco grillado acompañado de mermelada de tomates, faina crocante y chips de kale</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="alpan" style="position:relative; left: 400px;top:-1130px;">
-        <div class="titulos">
-           <h3>AL PAN</h3>
-        </div>
-        <br>
-        <p.a class="plato">Pulled Pork</p.a>
-        <p.b class="precios" style="float: right;">$1190</p.b>
-        <p class="platos">Bondiola braseada a la barbacoa, queso chedar, cebollas al malbec y pepinos agridulces</p>
-     </div>
- </div>
- <div class="contenedor">
-    <div class="alpan" style="position: relative; right:100px; top:-955px;">
-        <div class="titulos">
-           <h3>HEALTHY</h3>
-        </div>
-        <br>
-        <p.a class="plato">Go Vegan</p.a>
-        <p.b class="precios" style="float: right;">$690</p.b>
-        <p class="platos">Medallon de remolacha y arroz yamani acompanado de mix de verdes, portobellos salteados y tomates confitados</p>
-        <br>
-        <p.a class="plato">Ensalada Sherman</p.a>
-        <p.b class="precios" style="float: right;">$950</p.b>
-        <p class="platos">Mix de verdes, papines andinos a la chapa, tomates secos, olivas negras, quinoa crocante, y gajos de remolacha asada con vinagreta de a casa</p>
+   <div>
+        <img src="./images/image15.PNG" style="width:100px;position: relative; right: 900px; top: -1350px;" >
+        <img src="./images/image16.PNG" style="width:200px; position:relative; right: 450px; top: -750px;">
+        <img src="./images/image17.PNG" style="width:80px; position: relative; right: 380px; top: -400px;">
     </div>
- </div>
- <div class="contenedor">
-    <div class="alpan" style="position:relative; left: 400px;top:-850px;">
-        <div class="titulos">
-           <h3>OUR EMPANADAS</h3>
-        </div>
-        <br>
-        <p.a class="plato">Tabla de Dos</p.a>
-        <p.b class="precios" style="float: right;">$470</p.b>
-        <p class="platos">Dos empanadas a eleccion</p>
-        <br>
-        <p.a class="plato">Tabla de Tres</p.a>
-        <p.b class="precios" style="float: right;">$690</p.b>
-        <p class="platos">Tres empanadas a eleccion</p>
-        <p class="platos">- Humita casera con queso gouda</p>
-        <p class="platos">- Ternera braseada</p>
-        <p class="platos">- Hongos y mix de quesos con topping de cebolla al malbec</p>
-        <p class="platos">- Bondiola especiada</p>
-        <p class="platos">- Cabutia asada, cebolla y queso gouda</p>
-        <br>
-        <p.c class="platos">* Empanada por unidad</p.c>
-        <p.d class="precios" style="float: right;">$260</p.d>
-     </div>
- </div>
-   <br>
-   <br>
-   <br>
 
-    <div class="contenedor">
-        <div class="brusquetas" style="position:relative; left: 330px; top:-1428px;">
+    <div class="PLATOS" style="position: relative; left: 123px; top: -260px;">
+        <div class="fila1">
             <div class="titulos">
-               <h3>BRUSCHETTAS</h3>
+                <h3>PARA MARIDAR</h3>
+            </div>
+            <br>
+            <p.a class="plato">Tabla de Maridaje</p.a>
+            <p.b class="precios" style="float: right;">$1290</p.b>
+            <p class="platos">Tabla de variedad de 4 quesos con focaccia casera, hummus y cebollas al malbec</p>
+            <br>
+            <div class="titulos">
+                <h3>APPETIZERS</h3>
+            </div>
+            <br>
+            <p.a class="plato">Provolone Bites</p.a>
+            <p.b class="precios" style="float: right;">$650</p.b>
+            <p class="platos">Triangulos de queso provolone rebozados en panko y acompanados de mermelada de tomates y dressing de cilantro</p>
+            <br>
+            <p.a class="plato">Papas Helka</p.a>
+            <p.b class="precios" style="float: right;">$650</p.b>
+            <p class="platos">Papas cuna con alioli y salsa brava</p>
+            <br>
+            <p.a class="plato">Bunuelos Milose</p.a>
+            <p.b class="precios" style="float: right;">$750</p.b>
+            <p class="platos">De espinaca, remolacha, y zanahoria con dip de alioli</p>
+            <br>
+            <p.a class="plato">Falafel Rabat</p.a>
+            <p.b class="precios" style="float: right;">$750</p.b>
+            <p class="platos">Croquetas de garbanzos con dip de zanahorias asadas</p>
+            <br>
+            <p.a class="plato">Chicken Fingers</p.a>
+            <p.b class="precios" style="float: right;">$790</p.b>
+            <p class="platos">Bastones de pollo crispy con barbacoa y honey mustard</p>
+            <br>
+            <p.a class="plato">Arancini de Hongos</p.a>
+            <p.b class="precios" style="float: right;">$850</p.b>
+            <p class="platos">Croquetas rellenas de risotto de hongos con corazon de queso azul</p>
+            <br>
+            <p.a class="plato">Provoleta especial</p.a>
+            <p.b class="precios" style="float: right;">$850</p.b>
+            <p class="platos">Queso provolone grillado y acompanado con tomates confitados, portobellos salteados, pan de nuez y mix de verdes con dressing de la casa</p>
+            <br>
+            <p.a class="plato">Tortilla de Papa Belica</p.a>
+            <p.b class="precios" style="float: right;">$900</p.b>
+            <p class="platos">Tortilla de papa y cebolla con dip de berenjenas asadas</p>
+            <br>
+            <p.a class="plato">Burrata Montecasino</p.a>
+            <p.b class="precios" style="float: right;">$990</p.b>
+            <p class="platos">Queso fresco grillado acompañado de mermelada de tomates, faina crocante y chips de kale</p>
+        </div>
+        <div class="fila1">
+            <div class="titulos">
+                <h3>AL PAN</h3>
+            </div>
+            <br>
+            <p.a class="plato">Pulled Pork</p.a>
+            <p.b class="precios" style="float: right;">$1190</p.b>
+            <p class="platos">Bondiola braseada a la barbacoa, queso chedar, cebollas al malbec y pepinos agridulces</p>
+            <br>
+            <div class="titulos">
+                <h3>HEALTHY</h3>
+            </div>
+            <br>
+            <p.a class="plato">Go Vegan</p.a>
+            <p.b class="precios" style="float: right;">$690</p.b>
+            <p class="platos">Medallon de remolacha y arroz yamani acompanado de mix de verdes, portobellos salteados y tomates confitados</p>
+            <br>
+            <p.a class="plato">Ensalada Sherman</p.a>
+            <p.b class="precios" style="float: right;">$950</p.b>
+            <p class="platos">Mix de verdes, papines andinos a la chapa, tomates secos, olivas negras, quinoa crocante, y gajos de remolacha asada con vinagreta de a casa</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="titulos">
+                <h3>OUR EMPANADAS</h3>
+            </div>
+            <br>
+            <p.a class="plato">Tabla de Dos</p.a>
+            <p.b class="precios" style="float: right;">$470</p.b>
+            <p class="platos">Dos empanadas a eleccion</p>
+            <br>
+            <p.a class="plato">Tabla de Tres</p.a>
+            <p.b class="precios" style="float: right;">$690</p.b>
+            <p class="platos">Tres empanadas a eleccion</p>
+            <p class="platos">- Humita casera con queso gouda</p>
+            <p class="platos">- Ternera braseada</p>
+            <p class="platos">- Hongos y mix de quesos con topping de cebolla al malbec</p>
+            <p class="platos">- Bondiola especiada</p>
+            <p class="platos">- Cabutia asada, cebolla y queso gouda</p>
+            <br>
+            <p.c class="platos">* Empanada por unidad</p.c>
+            <p.d class="precios" style="float: right;">$260</p.d>
+        </div>
+        <div class="fila1">
+            <div class="titulos">
+                <h3>BRUSCHETTAS</h3>
             </div>
             <br>
             <p.a class="plato">Bruschetta Azul</p.a>
@@ -189,12 +163,9 @@
             <p.a class="plato">Bruschetta Salmongrado</p.a>
             <p.b class="precios" style="float: right;">$1190</p.b>
             <p class="platos">Focaccia casera con queso crema, palta, salmon ahumado y pebre de cebolla morada y mango</p>
-        </div>
-    </div>
-    <div class="contenedor">
-        <div class="postres" style="position: relative; left: 830px; top: -1400px;">
+            <br>
             <div class="titulos">
-               <h3>OUR DESSERTS</h3>
+                <h3>OUR DESSERTS</h3>
             </div>
             <br>
             <p.a class="plato">Queso & Dulce</p.a>
@@ -223,16 +194,12 @@
             <p class="platos">Clasico de cafe, cacao y mascarpone</p>
         </div>
     </div>
-</div>   
-<div>
-    <img src="./images/image15.PNG" style="width:100px;position: relative; right: 900px; top: -1350px;" >
-    <img src="./images/image16.PNG" style="width:200px; position:relative; right: 450px; top: -750px;">
-    <img src="./images/image17.PNG" style="width:80px; position: relative; right: 380px; top: -400px;">
- </div>
-<div class="footer" style="position: relative; right:450px; top: 20px;">
-    <div class="footer-items">
-        <h6>CAP. GRAL. RAMON FREIRE 1117, BUENOS AIRES, ARGENTINA</h6>
-        <a href=# target="_blank"><i class="fab fa-instagram"></i></a> <h6>@HELKAWINELOUNGE</h6> 
-    </div>
-</div>
+    <div class="footer" style="position: relative; left:20px; top: 20px;">
+        <div class="footer-items">
+            <h6>CAP. GRAL. RAMON FREIRE 1117, BUENOS AIRES, ARGENTINA</h6>
+            <a href=# target="_blank"><i class="fab fa-instagram"></i></a> <h6>@HELKAWINELOUNGE</h6> 
+        </div>
+  </div>
+  <br>
+  <br>
 </html>

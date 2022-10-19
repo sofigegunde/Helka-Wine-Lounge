@@ -2,7 +2,7 @@
 
 body{
     height: 1300px;
-    background-color: #FFF9EA;
+    background-color: #ffffff;
 }
 
 a{
@@ -11,9 +11,10 @@ a{
 }
 
 .navbar{
-    background: #fff;
+    background:#ffffff;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     z-index: 2;
     padding: 2.4rem;
 }
@@ -25,8 +26,15 @@ a{
     top: 0px;
     left: 150px;
 }
-.navbar ul{
-    position: absolute;
+
+@media all and (max-width:600px) {
+    .navbar img{
+        width: 25%;
+        left: 10px;
+    }
+}
+
+.navbar-links ul{
     list-style: none;
     display: flex;
     align-items: center;
@@ -34,35 +42,106 @@ a{
     top: 25px;
 }
 
-.navbar ul a{
+.navbar-links ul a{
     margin: 0 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 15px;
 }
 
-.navbar ul a:hover{
+.navbar-links ul a:hover{
     color: #c2c2c2;
 }
 
-.navbar li:hover ul.dropdown { display: block;}
+.navbar-links li{
+    list-style:none;
+}
 
-.navbar li ul.dropdown{
+.navbar-links li a{
+    display: block;
+}
+
+.navbar-links li:hover ul.dropdown { 
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+}
+
+.navbar-links li ul.dropdown{
     position: absolute;
     display: none;
-    right: 1px;
-    width: 200px;
+    right: -50px;
+    width: 100px;
     background: white;
     box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
-    padding-top: 0;
-    top: 35px;
+    padding-top: 10px;
+    top: 70px;
     justify-content: space-evenly;
+    left: auto;
+    right: 3.5em;
+    text-align: right;
 }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+       display: none;
+       width: 100%;
+    }
+    .navbar {
+       flex-direction: column;
+       align-items: flex-start;
+       width: 100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+       display: flex;
+    }
+}
+
 .centrado{
     margin-right: 40px;
 }
 .center{
     display: block;
+    top: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -75,33 +154,121 @@ a{
     width: 50%;
 }
 
-.small-containers{
-    display: grid;
-    grid-template-columns: 3% 3%;
-    grid-gap: 5px;
-    text-align: center;
-    justify-content: center;
+.fotos{
+    float: left;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    padding-left: 90px;
 }
 
-.boxes-containers{
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    grid-gap: 35px;
-    text-align: center;
-    justify-content: center;
-    margin-top: 150px;
+.boxes-containers::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 600px){
+    .fotos {
+        width: 75%;
+    }
 }
 
 .boxes-containers img{
     width: 100%;
     margin-bottom: 25px;
 }
+
+.fila1 {
+    float: left;
+    align-items: center;
+    width: 20%;
+    padding: 4%;
+}
+
+.PLATOS::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.PLATOS {
+    width: 100%;
+    margin-bottom: 25px;
+    
+}
+
+@media screen and (max-width: 600px){
+    .fila1 {
+        width: 50%;
+    }
+}
+
+
+.reservaciones {
+    float: left;
+    align-items: center;
+    width: 25%;
+    padding: 10px;
+    padding-left: 112px;
+}
+
+.reservas::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 600px){
+    .reservaciones {
+        width: 75%;
+    }
+}
+
+.reservas img{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+.email {
+    float: center;
+    width: 50%;
+    padding: 90px;
+    padding-left: 500px;
+}
+
+@media screen and (max-width: 600px){
+    .email {
+        width: 75%;
+    }
+}
+
 .menutitle{
     text-align: center;
 }
 
+@media screen and (min-width: 601px) {
+    .menutitle {
+      font-size: 17px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .menutitle {
+      font-size: 14px;
+      left: 25%;
+      right: 25%;
+    }
+}
+
 .reservastitle{
     text-align: center;
+}
+
+
+.icono{
+    display: none;
 }
 
 .eventos1{
@@ -110,6 +277,7 @@ a{
     margin-right: auto;
     width: 50%;
 }
+
 
 .upcomingevents{
     position: absolute;
@@ -188,6 +356,8 @@ h4{
     text-align: left;
 }
 
+
+
 p{
     margin: none;
     text-align: center;
@@ -222,7 +392,7 @@ p{
 }
 /* Aqui empieza el css del dropdown */
 .dropbtn {
-    background-color: rgb(82, 46, 20);
+    background-color: rgb(91, 18, 18);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -243,7 +413,6 @@ p{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
-  
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -251,6 +420,18 @@ p{
     display: block;
   }
   
+  .background-events {
+    width: 100%;
+    position: relative;
+    left: 80px;
+  }
+
+  @media only screen and (max-width: 600px) {
+        .background-events {
+            width: 100%;
+        }
+    }
+
   .dropdown-content a:hover {background-color: #f1f1f1}
   
   .dropdown:hover .dropdown-content {
@@ -265,11 +446,25 @@ p{
 .calendario{
     padding: 50px;
     font-size: 30px;
-    background-color: rgb(82, 46, 20);
+    background-color: rgb(91, 18, 18);
     color: white;
 
 }
 textarea{
     padding: 50px;
+}
+
+@media screen and (min-width: 601px) {
+    .upcomingevents {
+      font-size: 17px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .upcomingevents {
+      font-size: 14px;
+      left: 25%;
+      right: 25%;
+    }
 }
 
