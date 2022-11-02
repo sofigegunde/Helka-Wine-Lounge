@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0"></meta>
+        <title>Helka Wine Lounge</title>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">
+                <img src="./images/image50.PNG" width="150px" > 
+            </a>
+            <div class="dropdown">
+              <button class="dropbtn">FOTOS 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="lugar.html">LUGAR</a>
+                <a href="comida.html">COMIDA</a>
+              </div>
+            </div> 
+            <a href="eventos.html">EVENTOS</a>
+            <a href="reservas.html">RESERVAS</a>
+            <a href="menu.html">MENU</a>
+            <a href="javascript:void(0);" style="font-size:35px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+     <br>
+     <div class="reservastitle">
+         <h3>RESERVAS</h3> 
+      </div> 
+      <br>
+      <br>
+      <br>
+      <section class="banner">
+            <div class="cardcontainer">
+                <div class="cardimg">
+
+                </div>
+                <div class="cardcontent">
+                    <h3>COMPLETE EL FORMULARIO</h3>
+                    <form>
+                       <div class="formrow">
+                           <select name="days">
+                                <option value="dayselect">Elegir Dia</option>
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miercoles</option>
+                                <option value="jueves">Jueves</option>
+                                <option value="viernes">Viernes</option>
+                                <option value="sabado">Sabado</option>
+                                <option value="domingo">Domingo</option>
+                            </select>
+                            <select name="hours">
+                                <option value="hourselect">Elegir Hora</option>
+                                <option value="10">19:00</option>
+                                <option value="10">20:00</option>
+                                <option value="10">21:00</option>
+                                <option value="10">22:00</option>
+                                <option value="10">23:00</option>
+                            </select>
+                        </div>
+                        <div class="formrow">
+                            <input type="text" placeholder="Nombre Completo">
+                            <input type="text" placeholder="Numero de Telefono">
+                        </div>
+                        <div class="formrow">
+                            <input type="number" placeholder="Cantidad de Personas" min="1">
+                            <input type="submit" value="Reservar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+      </section>
+      <div class="mapresponsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.1808724097364!2d-58.45655758439443!3d-34.574289663449434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57de45ea177%3A0xf6a6d4fc0e644ea1!2sHELKA%20WINE!5e0!3m2!1ses!2sar!4v1665577692682!5m2!1ses!2sar" width="500px" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+       <div class="footer">
+            <div class="footer-items">
+              <h6>CAP. GRAL. RAMON FREIRE 1117, BUENOS AIRES, ARGENTINA</h6>
+              <h6>@HELKAWINELOUNGE</h6> 
+            </div>
+            <br>
+     </div>
+     <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+         x.className = "topnav";
+        }
+        }
+    </script>
+  </body>
+</html>

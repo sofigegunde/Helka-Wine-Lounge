@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0"></meta>
+        <title>Helka Wine Lounge</title>
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">
+                <img src="./images/image50.PNG" width="150px" > 
+            </a>
+            <div class="dropdown">
+              <button class="dropbtn">FOTOS 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="lugar.html">LUGAR</a>
+                <a href="comida.html">COMIDA</a>
+              </div>
+            </div> 
+            <a href="eventos.html">EVENTOS</a>
+            <a href="reservas.html">RESERVAS</a>
+            <a href="menu.html">MENU</a>
+            <a href="javascript:void(0);" style="font-size:35px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      <br>
+        <div class="comidatitle">
+            <h3> ALGUNAS FOTOS DE NUESTROS PLATOS</h3>
+        </div>
+        <br>
+        <div class="boxes-container">
+            <div class="fotos">
+                <img src="./images/image18.jpg" style="width: 100%;">
+            </div>
+            <div class="fotos">
+                <img src="./images/image19.jpg" style="width: 100%;">
+            </div>
+            <div class="fotos">
+                <img src="./images/image20.png" style="width: 100%;">
+            </div>
+        </div>
+        <div class="boxes-container">
+            <div class="fotos">
+                <img src="./images/image21.jpg" style="width: 100%;">
+           </div>
+            <div class="fotos">
+                <img src="./images/image55.png" style="width: 100%;">
+            </div>
+            <div class="fotos">
+                <img src="./images/image24.png" style="width: 100%;">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="footer" style="position: relative; left:0px; top: 200px;">
+            <div class="footer-items">
+                <h6>CAP. GRAL. RAMON FREIRE 1117, BUENOS AIRES, ARGENTINA</h6>
+                <h6>@HELKAWINELOUNGE</h6> 
+            </div>
+      </div>
+      <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+         x.className = "topnav";
+        }
+        }
+    </script>
+    </body>
+</html>
