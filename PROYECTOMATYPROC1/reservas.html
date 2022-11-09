@@ -2,106 +2,94 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="index.css"/>
-        <script src="script.js" defer></script>
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport"content="width=device-width, initial-scale=1.0"></meta>
         <title>Helka Wine Lounge</title>
     </head>
     <body>
-        <div class="container">
-            <i class="fas fa-bars fa-2x"></i>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">
+                <img src="./images/image50.PNG" width="150px" > 
+            </a>
+            <div class="dropdown">
+              <button class="dropbtn">FOTOS 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="lugar.html">LUGAR</a>
+                <a href="comida.html">COMIDA</a>
+              </div>
+            </div> 
+            <a href="eventos.html">EVENTOS</a>
+            <a href="reservas.html">RESERVAS</a>
+            <a href="menu.html">MENU</a>
+            <a href="javascript:void(0);" style="font-size:35px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-        <nav class="navbar">
-            <a href="index.html">
-                <img src="./images/image50.PNG" style="top: -30px;"> 
-            </a>
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-               <ul>
-                    <li><a href="menu.html" class="centrado">Menu</a></li>  
-                    <li><a href="reservas.html">Reservas</a></li>     
-                    <li><a href="eventos.html">Eventos</a></li> 
-                    <li><a href="">Fotos<span class="arrow-down"></span></a>
-                        <ul class="dropdown">
-                            <li><a href="lugar.html">Lugar</a></li>
-                            <li><a href="comida.html">Comida</a></li>
-                       </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav> 
-        <a href="javascript:void(0);" class="icono" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-		<i class="fa fa-bars" aria-hidden="true"></i>   
+     <br>
      <div class="reservastitle">
-         <h3 style="font-size:1.5vw;">RESERVAS</h3> 
+         <h3>RESERVAS</h3> 
       </div> 
       <br>
       <br>
-     <form>
-          <br>
-          <br>
-          <br>
-          <div class="reservas">
-              <div class="reservaciones">
-                    <label> ELEGIR LA CANTIDAD DE PERSONAS </label>
-                    <br>
-                    <br>
-                    <div class="dropdown" style="position: relative; left: 40px;">
-                        <button class="dropbtn">Cantidad de personas</button>
-                        <div class="dropdown-content">
-                            <a href="#">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
+      <br>
+      <section class="banner">
+            <div class="cardcontainer">
+                <div class="cardimg">
+
+                </div>
+                <div class="cardcontent">
+                    <h3>COMPLETE EL FORMULARIO</h3>
+                    <form>
+                       <div class="formrow">
+                           <select name="days">
+                                <option value="dayselect">Elegir Dia</option>
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miercoles</option>
+                                <option value="jueves">Jueves</option>
+                                <option value="viernes">Viernes</option>
+                                <option value="sabado">Sabado</option>
+                                <option value="domingo">Domingo</option>
+                            </select>
+                            <select name="hours">
+                                <option value="hourselect">Elegir Hora</option>
+                                <option value="10">19:00</option>
+                                <option value="10">20:00</option>
+                                <option value="10">21:00</option>
+                                <option value="10">22:00</option>
+                                <option value="10">23:00</option>
+                            </select>
                         </div>
-                    </div>
-              </div>
-              <div class="reservaciones">
-                    <label style="width: 100%; position: relative; left: 70px;"> ELEGIR LA FECHA </label>
-                    <br>
-                    <br>
-                    <input class="calendario" type="date" id="fecha" name="fecha" value="1">
-              </div>
-              <div class="reservaciones">
-                    <label style="width: 100%; position: relative; left: 70px;"> HORARIO </label>
-                    <br>
-                    <br>
-                    <input class="calendario" type="time" id="appt" name="appt" min="19:00" max="00:00" required>
-              </div>
+                        <div class="formrow">
+                            <input type="text" placeholder="Nombre Completo">
+                            <input type="text" placeholder="Numero de Telefono">
+                        </div>
+                        <div class="formrow">
+                            <input type="number" placeholder="Cantidad de Personas" min="1">
+                            <input type="submit" value="Reservar">
+                        </div>
+                    </form>
+                </div>
             </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="email">
-            <label for="fname">DEJE SU EMAIL PARA QUE LE LLEGUEN LOS DATOS DE SU RESERVA:</label><br>
-            <br>
-            <input type="email" id="fname" name="fname" style="position: relative; left: 0px; width: 500px;"><br>
-            <br>
-            <input type="submit" style="position: relative; left: 225px;">
-        </div>
-      </form>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.1808724097364!2d-58.45655758439443!3d-34.574289663449434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57de45ea177%3A0xf6a6d4fc0e644ea1!2sHELKA%20WINE!5e0!3m2!1ses!2sar!4v1665577692682!5m2!1ses!2sar" width="500" height="350" style="position: relative; left: 500px; top: 100px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <div class="caballos">
-          <img src="./images/image58.png" width="150px;" style="position: relative; top: -940px; left: 460px;">
-          <img src="./images/image52.jpg" width="150px;" style="position: relative; top:-950px; left: 733px;">
+      </section>
+      <div class="mapresponsive">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.1808724097364!2d-58.45655758439443!3d-34.574289663449434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57de45ea177%3A0xf6a6d4fc0e644ea1!2sHELKA%20WINE!5e0!3m2!1ses!2sar!4v1665577692682!5m2!1ses!2sar" width="500px" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="margin-bottom: 3cm;"></iframe>
       </div>
-       <div style="position: relative; top: -50px; left: 520px;">
-           <img src="./images/image22.PNG" width="450px">
-       </div>
        <div class="footer">
             <div class="footer-items">
               <h6>CAP. GRAL. RAMON FREIRE 1117, BUENOS AIRES, ARGENTINA</h6>
-               <a href=# target="_blank"><i class="fab fa-instagram"></i></a> <h6>@HELKAWINELOUNGE</h6> 
+              <h6>@HELKAWINELOUNGE</h6> 
             </div>
-            <br>
      </div>
+     <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+         x.className = "topnav";
+        }
+        }
+    </script>
   </body>
 </html>
